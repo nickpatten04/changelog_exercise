@@ -1,1 +1,3 @@
+# Change log
 
+The overall goal of this repo is to detect data anomalies based on a given dataset (in this case dataset.json). The only dependencies are pandas and numpy which you can pip install manually or use the requirements.txt file in the repo. To see the final reports, you can run the functions in report_generation.py. If there is an anomaly in the row the column applied_rules will populate with an array of validation function names, and rule_decriptions will be populated with a JSON object where the key is the column the anomaly was found, and the value is list of decriptions for more detail on the given anomaly. If a decription isnt give, the function name with populate in its place. All rows with anomalies will have their status changed to "cancelled"
